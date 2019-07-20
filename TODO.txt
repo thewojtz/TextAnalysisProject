@@ -2,7 +2,7 @@ Proszę napisać program który dostaje na wejściu plik tekstowy z tekstem (ró
 
 Statystykę wyrazów – top 10 wyrazów dłuższych niż 5 liter z liczbą ich wystąpień.
 Liczba zdań w tekscie (można przyjąć pewne uzasadnione uproszczenia).
-Liczba białych znaków w teksćie.
-Liczba wszystkich znaków w tekscie.
+Liczba białych znaków w tekście.
+Liczba wszystkich znaków w tekście.
 Liczba znaków nie będących znakami alfabetu w tekscie.
 Statystyka znaków alfabetu.

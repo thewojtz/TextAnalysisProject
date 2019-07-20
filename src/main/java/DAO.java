@@ -26,7 +26,6 @@ public class DAO {
     }
 
     public String getDataFile(String address){
-
         StringBuilder contentBuilder = new StringBuilder();
         try (BufferedReader br = new BufferedReader(new FileReader(address)))
         {
