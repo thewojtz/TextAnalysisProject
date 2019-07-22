@@ -11,6 +11,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.stream.Stream;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static test.java.GetTestText.getTestText;
 
@@ -25,7 +26,7 @@ public class NumberOfSignsTest {
     public void numberOfAlphabetSignsTest() {
         NumberOfSigns testObject = new NumberOfSigns(getTestText(testAddress));
         System.out.println(testObject.getSignsAmount());
-        assertTrue(testObject.getSignsAmount()==testSignsAmount);
+        assertEquals(testSignsAmount, testObject.getSignsAmount());
     }
 
 }

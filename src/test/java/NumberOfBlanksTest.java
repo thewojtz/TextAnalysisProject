@@ -3,6 +3,7 @@ package test.java;
 import main.java.NumberOfBlanks;
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static test.java.GetTestText.getTestText;
 
@@ -14,7 +15,7 @@ public class NumberOfBlanksTest {
     @Test
     public void numberOfBlanksTest() {
         NumberOfBlanks number = new NumberOfBlanks(getTestText(testAddress));
-        assertTrue(number.getNumberOfBlanks()==testBlanksSignsAmount);
+        assertEquals(testBlanksSignsAmount, number.getNumberOfBlanks());
     }
 
 }

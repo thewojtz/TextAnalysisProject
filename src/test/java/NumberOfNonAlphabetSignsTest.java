@@ -3,6 +3,8 @@ package test.java;
 
 import main.java.NumberOfNonAlphabetSigns;
 import org.junit.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static test.java.GetTestText.getTestText;
 
@@ -17,7 +19,7 @@ public class NumberOfNonAlphabetSignsTest {
     public void numberOfNonAlphabetSignsTest() {
         NumberOfNonAlphabetSigns number = new NumberOfNonAlphabetSigns(getTestText(testAddress));
        System.out.println(number.getNumberOfNonAlphabetSigns());
-        assertTrue(number.getNumberOfNonAlphabetSigns() == testNonAlphabetSignsAmount);
+        assertEquals(testNonAlphabetSignsAmount, number.getNumberOfNonAlphabetSigns());
     }
 
 }
