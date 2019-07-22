@@ -44,6 +44,9 @@ public class AlphabetStats {
         return statsMap;
     }
     
+    public void showMap(){
+        this.alphabetStatsMap.forEach((k,v) -> System.out.println(k + ":" + v));
+    }
     public void showMap(Map map){
         map.forEach((k,v) -> System.out.println(k + ":" + v));
     }

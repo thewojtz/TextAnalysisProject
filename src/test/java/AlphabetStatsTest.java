@@ -9,7 +9,7 @@ import static test.java.GetTestText.getTestText;
 public class AlphabetStatsTest {
 
     private static final String testAddress = "./src/testTexts/alphabetStatsTest.txt";
-    private static final int a = 11;
+    private static final int a = 11;    //expected data
     private static final int b = 7;
     private static final int c = 6;
     private static final int d = 4;

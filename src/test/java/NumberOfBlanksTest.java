@@ -8,7 +8,7 @@ import static test.java.GetTestText.getTestText;
 
 public class NumberOfBlanksTest {
 
-    static final int testBlanksSignsAmount = 241;
+    static final int testBlanksSignsAmount = 241; //number of expected blank signs in test text
     private static final String testAddress = "./src/testTexts/testFile.txt";
 
     @Test

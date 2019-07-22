@@ -17,7 +17,7 @@ public class NumberOfNonAlphabetSignsTest {
     @Test
     public void numberOfNonAlphabetSignsTest() {
         NumberOfNonAlphabetSigns number = new NumberOfNonAlphabetSigns(getTestText(testAddress));
-       System.out.println(number.getNumberOfNonAlphabetSigns());
+       //System.out.println(number.getNumberOfNonAlphabetSigns());
         assertEquals(testNonAlphabetSignsAmount, number.getNumberOfNonAlphabetSigns());
     }
 

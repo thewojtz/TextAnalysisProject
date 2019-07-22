@@ -17,7 +17,7 @@ public class NumberOfSignsTest {
     @Test
     public void numberOfAlphabetSignsTest() {
         NumberOfSigns testObject = new NumberOfSigns(getTestText(testAddress));
-        System.out.println(testObject.getSignsAmount());
+        //System.out.println(testObject.getSignsAmount());
         assertEquals(testSignsAmount, testObject.getSignsAmount());
     }
 

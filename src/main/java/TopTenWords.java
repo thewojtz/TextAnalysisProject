@@ -29,12 +29,18 @@ public class TopTenWords {
                     topTenWords.put(word, 1);
                 }
         }
+
+        //TODO: get 10 top words...
+
+
         return topTenWords;
     }
 
     public void showMap(Map map){
         map.forEach((k,v) -> System.out.println(k + ":" + v));
     }
-
+    public void showMap(){
+        this.topTenWordsMap.forEach((k,v) -> System.out.println(k + ":" + v));
+    }
     //words map
 }

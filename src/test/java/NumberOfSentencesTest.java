@@ -16,7 +16,7 @@ public class NumberOfSentencesTest {
     public void numberOfSentencesTest(){
 
         NumberOfSentences number = new NumberOfSentences(getTestText(testTextAddress));
-        System.out.println(number.getNumberOfSentences());
+        //System.out.println(number.getNumberOfSentences());
         assertEquals(testNumberOfSentences, number.getNumberOfSentences());
 
     }

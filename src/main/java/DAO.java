@@ -25,7 +25,7 @@ public class DAO {
         this.content = content;
     }
 
-    public String getDataFile(String address){
+    public static String getDataFile(String address){
         StringBuilder contentBuilder = new StringBuilder();
         try (BufferedReader br = new BufferedReader(new FileReader(address)))
         {
@@ -40,18 +40,6 @@ public class DAO {
             e.printStackTrace();
         }
         return contentBuilder.toString();
-
-        /*StringBuilder contentBuilder = new StringBuilder();
-        try (Stream<String> stream = Files.lines( Paths.get(filePath), StandardCharsets.UTF_8))
-        {
-            stream.forEach(s -> contentBuilder.append(s).append("\n"));
-        }
-        catch (IOException e)
-        {
-            e.printStackTrace();
-        }
-        return contentBuilder.toString();
-        */
 
     }
 }
