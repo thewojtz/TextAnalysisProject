@@ -5,9 +5,6 @@ public class NumberOfSigns {
     //iterator of sings
     int signsAmount;
 
-    public NumberOfSigns() {
-
-    }
 
     public int getSignsAmount() {
         return signsAmount;

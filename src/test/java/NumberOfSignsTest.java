@@ -3,16 +3,8 @@ package test.java;
 import main.java.NumberOfSigns;
 import org.junit.Test;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 import static test.java.GetTestText.getTestText;
 
 public class NumberOfSignsTest {

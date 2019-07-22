@@ -5,7 +5,6 @@ import main.java.NumberOfNonAlphabetSigns;
 import org.junit.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 import static test.java.GetTestText.getTestText;
 
 public class NumberOfNonAlphabetSignsTest {

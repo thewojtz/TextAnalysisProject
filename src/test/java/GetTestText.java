@@ -6,7 +6,6 @@ import java.io.IOException;
 
 public class GetTestText {
 
-    //private static final String testAddress = "C:\\Users\\THINKPADWOJTAS\\IdeaProjects\\TextAnalysisProject\\testFile.txt";
 
     static public String getTestText(String address) {
         StringBuilder contentBuilder = new StringBuilder();

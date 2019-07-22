@@ -3,7 +3,6 @@ package main.java;
 import java.util.HashMap;
 import java.util.Map;
 
-import static java.lang.Character.isUpperCase;
 
 public class TopTenWords {
 
