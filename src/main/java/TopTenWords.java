@@ -1,7 +1,9 @@
 package main.java;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 
 public class TopTenWords {
@@ -14,6 +16,13 @@ public class TopTenWords {
 
     public Map<String, Integer> getTopTenWordsMap() {
         return topTenWordsMap;
+    }
+
+    public static Map<String, Integer> sortByValue(final Map<String, Integer> wordCounts) {
+        return wordCounts.entrySet()
+                .stream()
+                .sorted((Map.Entry.<String, Integer>comparingByValue().reversed()))
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
     }
 
     private Map<String,Integer> getTopTenWordsStatistic(String text) {
@@ -30,10 +39,23 @@ public class TopTenWords {
                 }
         }
 
-        //TODO: get 10 top words...
+        final Map<String, Integer> sortedByCount = sortByValue(topTenWords);
 
+        int count = 0;
+        int max = 10;
 
-        return topTenWords;
+        Map<String,Integer> resultMap = new HashMap<String, Integer>();
+
+        for (Map.Entry<String,Integer> entry:sortedByCount.entrySet()) {
+            if (count >= max) break;
+
+            resultMap.put(entry.getKey(), entry.getValue());
+            count++;
+        }
+
+        //showMap(resultMap);
+
+        return resultMap;
     }
 
     public void showMap(Map map){
