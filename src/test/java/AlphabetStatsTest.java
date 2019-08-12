@@ -1,14 +1,13 @@
-package test.java;
+package src.test.java;
 
-import main.java.AlphabetStats;
+import src.main.java.AlphabetStats;
 import org.junit.Test;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
-import static test.java.GetTestText.getTestText;
+import static org.junit.Assert.assertTrue;
 
 public class AlphabetStatsTest {
 
-    private static final String testAddress = "./src/testTexts/alphabetStatsTest.txt";
+    private static final String testAddress = "./src/test/resources/testTexts/alphabetStatsTest.txt";
     private static final int a = 11;    //expected data
     private static final int b = 7;
     private static final int c = 6;
@@ -20,7 +19,7 @@ public class AlphabetStatsTest {
 
     @Test
     public void alphabetStatsTest() {
-        AlphabetStats stats = new AlphabetStats(getTestText(testAddress));
+        AlphabetStats stats = new AlphabetStats(GetTestText.getTestText(testAddress));
         //stats.showMap(stats.getAlphabetStatsMap());
         assertTrue((stats.getAlphabetStatsMap().get('a')==a)&&
                 (stats.getAlphabetStatsMap().get('b')==b)&&

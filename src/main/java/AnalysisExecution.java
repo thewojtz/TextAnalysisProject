@@ -1,8 +1,10 @@
-package main.java;
+package src.main.java;
 
-import test.java.GetTestText;
-
-import static main.java.DAO.getDataFile;
+import static src.main.java.DAO.getDataFile;
+import src.main.java.AlphabetStats;
+import src.main.java.NumberOfBlanks;
+import src.main.java.NumberOfSigns;
+import src.main.java.AlphabetStats;
 
 public class AnalysisExecution {
 

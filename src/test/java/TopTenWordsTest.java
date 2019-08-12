@@ -1,14 +1,15 @@
-package test.java;
+package src.test.java;
 
-import main.java.TopTenWords;
+import src.main.java.TopTenWords;
 import org.junit.Test;
+import src.test.java.GetTestText;
 
-import static junit.framework.Assert.assertTrue;
-import static test.java.GetTestText.getTestText;
+import static org.junit.Assert.assertTrue;
+
 
 public class TopTenWordsTest {
 
-    private static final String testTextAddress = "./src/testTexts/topTenWordsTest.txt";
+    private static final String testTextAddress = "./src/test/resources/testTexts/topTenWordsTest.txt";
     private static final int rowerek= 1;
     private static final int samolot = 4;
     private static final int zadanie = 3;
@@ -17,7 +18,7 @@ public class TopTenWordsTest {
 
     @Test
     public void topTenWordsTest() {
-        TopTenWords stats = new TopTenWords(getTestText(testTextAddress));
+        TopTenWords stats = new TopTenWords(GetTestText.getTestText(testTextAddress));
 
         assertTrue((stats.getTopTenWordsMap().get("rowerek")==rowerek)&&
                 (stats.getTopTenWordsMap().get("samolot")==samolot)&&

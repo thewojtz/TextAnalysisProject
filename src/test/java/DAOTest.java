@@ -1,20 +1,20 @@
-package test.java;
+package src.test.java;
 
-import main.java.DAO;
+import src.main.java.DAO;
 import org.junit.Test;
+import src.test.java.GetTestText;
 
 import static org.junit.Assert.*;
-import static test.java.GetTestText.getTestText;
 
 
 public class DAOTest {
 
-    private static final String testAddress = "./src/testTexts/testFile.txt";
+    private static final String testAddress = "./src/test/resources/testTexts/testFile.txt";
 
     @Test
     public void contentVerificationTest(){
         DAO dataAccessObject = new DAO(testAddress);
-        assertTrue(dataAccessObject.getContent().equals(getTestText(testAddress)));
+        assertTrue(dataAccessObject.getContent().equals(GetTestText.getTestText(testAddress)));
     }
 
 }
