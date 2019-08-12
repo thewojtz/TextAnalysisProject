@@ -1,6 +1,7 @@
 package src.test.java;
 
 import src.main.java.AlphabetStats;
+import src.test.java.GetTestText;
 import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;

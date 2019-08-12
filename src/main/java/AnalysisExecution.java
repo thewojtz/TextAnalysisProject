@@ -5,12 +5,16 @@ import src.main.java.AlphabetStats;
 import src.main.java.NumberOfBlanks;
 import src.main.java.NumberOfSigns;
 import src.main.java.AlphabetStats;
+import src.main.java.NumberOfNonAlphabetSigns;
+import src.main.java.NumberOfSentences;
+import src.main.java.TopTenWords;
 
 public class AnalysisExecution {
 
     public static void main(String[] args) {
 
-        String address = args[0];
+        //String address = args[0];
+        String address = "./src/test/resources/testTexts/testFile.txt";
 
         AlphabetStats alphabetStats = new AlphabetStats(getDataFile(address));
         System.out.println("Here is statistic of alphabet signs use:\n");
